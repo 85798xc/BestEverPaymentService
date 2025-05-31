@@ -4,7 +4,7 @@ import com.example.paymentserviceapplication.enums.RefundStatus;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 
-@Converter(autoApply = false)
+@Converter(autoApply = true)
 public class RefundStatusConverter implements AttributeConverter<RefundStatus, String> {
 
     @Override
