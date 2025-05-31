@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: tampis
+      changes:
+        - createTable:
+            tableName: bank_account
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+              - column:
+                  name: version
+                  type: INT
+              - column:
+                  name: number
+                  type: DECIMAL(19,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: DECIMAL(19,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: customer_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: currency
+                  type: VARCHAR(3)
+                  constraints:
+                    nullable: false
