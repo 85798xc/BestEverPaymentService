@@ -1,12 +1,17 @@
 package com.example.paymentserviceapplication.model;
 
 import com.example.paymentserviceapplication.converter.RefundStatusConverter;
-
 import com.example.paymentserviceapplication.enums.RefundStatus;
 import jakarta.persistence.*;
+import lombok.*;
+
 import java.math.BigDecimal;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Refund {
 
     @Id
@@ -23,45 +28,4 @@ public class Refund {
     @ManyToOne
     @JoinColumn(name = "payment_transaction_id")
     private PaymentTransaction paymentTransaction;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public BigDecimal getRefundedAmount() {
-        return refundedAmount;
-    }
-
-    public void setRefundedAmount(BigDecimal refundedAmount) {
-        this.refundedAmount = refundedAmount;
-    }
-
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
-
-    public RefundStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(RefundStatus status) {
-        this.status = status;
-    }
-
-    public PaymentTransaction getPaymentTransaction() {
-        return paymentTransaction;
-    }
-
-    public void setPaymentTransaction(PaymentTransaction paymentTransaction) {
-        this.paymentTransaction = paymentTransaction;
-    }
-
 }
