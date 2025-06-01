@@ -18,7 +18,6 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class Refund extends BaseEntity {
 
     private BigDecimal refundedAmount;
