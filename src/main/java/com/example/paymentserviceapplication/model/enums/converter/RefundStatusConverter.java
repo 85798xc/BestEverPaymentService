@@ -1,4 +1,4 @@
-package com.example.paymentserviceapplication.converter;
+package com.example.paymentserviceapplication.model.enums.converter;
 
 import com.example.paymentserviceapplication.model.enums.RefundStatus;
 import jakarta.persistence.AttributeConverter;

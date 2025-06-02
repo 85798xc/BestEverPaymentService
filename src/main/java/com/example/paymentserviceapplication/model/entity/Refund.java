@@ -1,6 +1,6 @@
 package com.example.paymentserviceapplication.model.entity;
 
-import com.example.paymentserviceapplication.converter.RefundStatusConverter;
+import com.example.paymentserviceapplication.model.enums.converter.RefundStatusConverter;
 import com.example.paymentserviceapplication.model.enums.RefundStatus;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
