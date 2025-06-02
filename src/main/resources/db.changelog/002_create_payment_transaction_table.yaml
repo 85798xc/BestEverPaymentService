@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: 2
-      author: tampis
+      author: arnas
       changes:
         - createTable:
             tableName: payment_transaction
