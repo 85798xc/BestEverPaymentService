@@ -1,6 +1,7 @@
 package com.example.paymentserviceapplication.model.entity;
 
 
+import com.example.paymentserviceapplication.model.Refund;
 import com.example.paymentserviceapplication.model.enums.PaymentTransactionStatus;
 import com.example.paymentserviceapplication.model.enums.converter.PaymentTransactionConverter;
 import jakarta.persistence.CascadeType;
@@ -16,6 +17,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
 @Table(name = "payment_transaction")
