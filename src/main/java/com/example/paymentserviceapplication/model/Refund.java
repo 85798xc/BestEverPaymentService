@@ -3,6 +3,7 @@ package com.example.paymentserviceapplication.model;
 import com.example.paymentserviceapplication.converter.RefundStatusConverter;
 import com.example.paymentserviceapplication.enums.RefundStatus;
 import com.example.paymentserviceapplication.model.entity.BaseEntity;
+import com.example.paymentserviceapplication.model.entity.PaymentTransaction;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

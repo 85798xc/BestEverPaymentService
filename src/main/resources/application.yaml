@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: PaymentServiceApplication
+
+  kafka:
+    admin:
+      properties:
+        offsets.topic.replication.factor: 1
+        transaction.state.log.replication.factor: 1
+        transaction.state.log.min.isr: 1
+    bootstrap-servers:
+      - localhost:9092
+    topics:
+      - topic-name: "payment-command"
+        partitions: 1
+        replication-factor: 1
+      - topic-name: "payment-command-result"
+        partitions: 1
+        replication-factor: 1
