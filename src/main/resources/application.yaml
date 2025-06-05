@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: PaymentServiceApplication
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payment_db
+    username: postgres
+    password: 2ee825a4
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml

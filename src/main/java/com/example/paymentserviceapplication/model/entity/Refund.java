@@ -1,23 +1,23 @@
-package com.example.paymentserviceapplication.model;
+package com.example.paymentserviceapplication.model.entity;
 
-import com.example.paymentserviceapplication.converter.RefundStatusConverter;
-import com.example.paymentserviceapplication.enums.RefundStatus;
-import com.example.paymentserviceapplication.model.entity.BaseEntity;
+import com.example.paymentserviceapplication.model.enums.converter.RefundStatusConverter;
+import com.example.paymentserviceapplication.model.enums.RefundStatus;
 import jakarta.persistence.Convert;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Refund extends BaseEntity {
 
     private BigDecimal refundedAmount;

@@ -1,4 +1,4 @@
-package com.example.paymentserviceapplication.enums;
+package com.example.paymentserviceapplication.model.enums;
 
 public enum RefundStatus {
     COMPLETED,
